@@ -17,11 +17,11 @@ namespace LibLogic.DTOs
         [Required]
         public string Author { get; set; } = null!;
         [Required]
-        public int? PublicationYear { get; set; }
+        public DateTime PublicationDate { get; set; } //= null!;
         [Required]
-        public int EntranceYear { get; set; }
-        public int? OffsYear { get; set; }
+        public DateTime EntranceDate { get; set; } //= null!;
+        public DateTime? OffsDate { get; set; }
         [Required]
-        public BookRental BookRental { get; set; } = null!;
+        public ICollection<BookRentalDTO>? BookRental { get; set; }
     }
 }

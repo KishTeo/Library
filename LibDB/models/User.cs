@@ -19,7 +19,7 @@ namespace LibDB.models
         public string Address { get; set; } = null!;
         [Required]
         public string Email { get; set; } = null!;
-        public ICollection<BookRental> Bookrental { get; set; } = null!;
+        public ICollection<BookRental>? Bookrental { get; set; } = null!;
 
 
     }

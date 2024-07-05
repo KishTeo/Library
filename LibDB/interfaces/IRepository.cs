@@ -9,7 +9,7 @@ namespace LibDB.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, object>>[] includeProperties = null);
+        Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includeProperties);
         Task<T> GetByIdAsync(int id);
         Task<bool> AddAsync(T entity);
         Task UpdateAsync(T entity);

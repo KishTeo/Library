@@ -19,7 +19,7 @@ namespace LibLogic.DTOs
         [Required]
         public DateTime dateCapture { get; set; }
         public DateTime? dateReturn { get; set; }
-        public User User { get; set; } = null!;
-        public Book Book { get; set; } = null!;
+        public UserDTO User { get; set; } = null!;
+        public BookDTO Book { get; set; } = null!;
     }
 }
